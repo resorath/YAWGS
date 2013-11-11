@@ -8,7 +8,7 @@
     <link href="<?=base_url(); ?>assets/css/bootstrap-override.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="<?=base_url(); ?>assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="<?=base_url(); ?>assets/js/jquery.cycle.all.js"></script>
+	<script type="text/javascript" src="<?=base_url(); ?>assets/js/rslides.js"></script>
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

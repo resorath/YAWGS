@@ -1,11 +1,18 @@
-<div class="bodymodule" id="frontbody">
+<!--<div class="bodymodule" id="frontbody">
   <div class="rotator">
-    <img src="<?php echo(base_url()); ?>assets/img/banner/leader.png">
-    <a href="philosophy"><img src="<?php echo(base_url()); ?>assets/img/banner/philosophies.png"></a>
-    <a href="recruitment"><img src="<?php echo(base_url()); ?>assets/img/banner/recruiting.png"></a>
-    <a href="forums"><img src="<?php echo(base_url()); ?>assets/img/banner/forums.png"></a>
+    <img src="<?php echo(base_url()); ?>assets/img/banner/leader.png" class="rotatorimages">
+    <a href="philosophy"><img src="<?php echo(base_url()); ?>assets/img/banner/philosophies.png" class="rotatorimages img-responsive"></a>
+    <a href="recruitment"><img src="<?php echo(base_url()); ?>assets/img/banner/recruiting.png" class="rotatorimages img-responsive"></a>
+    <a href="forums"><img src="<?php echo(base_url()); ?>assets/img/banner/forums.png" class="rotatorimages img-responsive"></a>
   </div>
-</div>
+</div>-->
+
+<ul class="rslides">
+  <li><img src="<?php echo(base_url()); ?>assets/img/banner/leader.png" class="rotatorimages"></li>
+  <li><a href="philosophy"><img src="<?php echo(base_url()); ?>assets/img/banner/philosophies.png" class="e"></a></li>
+  <li><a href="recruitment"><img src="<?php echo(base_url()); ?>assets/img/banner/recruiting.png" class=""></a></li>
+  <li><a href="forums"><img src="<?php echo(base_url()); ?>assets/img/banner/forums.png" class=""></a></li>
+</ul>
 
 <div class="row highlights">
   <div class="col-sm-4">
@@ -33,7 +40,7 @@
   </div>
 </div>
 
-<div class="news container">
+<div class="news">
   <div class="newsarticle">
     <span class="news_headline">Title</span>
     <span class="news_postedby">Posted By poster</span>
@@ -46,11 +53,15 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
-    $('.rotator')
+    /*$('.rotator')
       .cycle({
       fx: 'fade',
       delay: -2000,  
-    });
+    });*/
+  $(".rslides").responsiveSlides({
+    timeout: 3000
+
+  });
     
     $('.highlight_box').click(function(){
   if($(this).attr("id") == "hlb1")
